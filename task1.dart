@@ -1,18 +1,4 @@
 
-
-void main(){
-  Product product = new Product("Labtop", "del corei5", 190.45, "some/where");
-  print("Name: " + product.name);
-  print("Description: " + product.description);
-  print("Price: " + product.price.toString());
-  print("Image: " + product.image);
-}
-
-// Products will have the following properties:
-// Name
-// Description
-// Price
-// Image
 class Product {
   String name;
   String description;
@@ -24,13 +10,7 @@ class Product {
 
 }
 
-// Create a class that manages products, which should include methods to:
-// Add a new product
-// View all products
-// View only completed products
-// View only pending products
-// Edit a product (update name, description, price, Image)
-// Delete a product
+
 class ProductManager {
   var products = <Product>{};
 
@@ -64,5 +44,19 @@ class ProductManager {
     this.products.remove(product);
   }
 
-  
+  void updateName(Product product, String name){
+    product.name = name;
+  }
+
+  void updateDescription(Product product, String description){
+    product.description = description;
+  }
+
+  void updatePrice(Product product, double price){
+    product.price = price;
+  }
+
+  void updateImage(Product product, String image){
+    product.image = image;
+  }
 }
