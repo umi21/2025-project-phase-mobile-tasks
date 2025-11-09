@@ -1,11 +1,47 @@
 class Product {
-  String name;
-  String description;
-  double price;
-  String image;
-  bool completed = false;
+  String _name;
+  String _description;
+  double _price;
+  String _image;
+  bool _completed = false;
 
-  Product(this.name, this.description, this.price, this.image);
+  Product(this._name, this._description, this._price, this._image);
+
+  // getter and setter for name
+  String get name {
+    return _name;
+  }
+
+  set name(String productName) {
+    this._name = productName;
+  }
+
+  // getter and setter for description
+  String get description {
+    return _description;
+  }
+
+  set description(String productDescription) {
+    this._description = productDescription;
+  }
+
+  // getter and setter for price
+  double get price {
+    return _price;
+  }
+
+  set price(double productPrice) {
+    this.price = productPrice;
+  }
+  // getter and setter for image
+  String get image {
+    return _image;
+  }
+
+  set image(String productImage) {
+    this._image = productImage;
+  }
+
 
 }
 
@@ -25,7 +61,7 @@ class ProductManager {
 
   void viewCompletedProducts(){
     for (Product product in this.products){
-      if (product.completed){
+      if (product._completed){
         print(product.name);
       }
     }
@@ -33,8 +69,8 @@ class ProductManager {
   
   void viewPendingProducts(){
     for (Product product in this.products){
-      if(! product.completed){
-        print(product.name);
+      if(! product._completed){
+        print(product._name);
       }
     }
   }
@@ -43,11 +79,11 @@ class ProductManager {
     this.products.remove(product);
   }
 
-  void updateName(Product product, String name){
+  void updateProductName(Product product, String name){
     product.name = name;
   }
 
-  void updateDescription(Product product, String description){
+  void updateProductDescription(Product product, String description){
     product.description = description;
   }
 
@@ -56,6 +92,6 @@ class ProductManager {
   }
 
   void updateImage(Product product, String image){
-    product.image = image;
+    product._image = image;
   }
 }
