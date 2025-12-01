@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'productCard.dart';
+import 'product_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

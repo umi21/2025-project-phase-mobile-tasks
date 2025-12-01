@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'home.dart';
+import 'add_screen.dart';
+import 'product_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,13 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins', 
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      title: 'Ecommerce',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/product': (context) => const ProductScreen(),
+        '/add': (context) => const AddScreen()
+      },
     );
   }
 }
