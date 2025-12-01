@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'product.dart';
+import 'productCard.dart';
 
-class ProductListScreen extends StatelessWidget {
-  const ProductListScreen({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

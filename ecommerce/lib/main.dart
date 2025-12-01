@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screen.dart';
+import 'home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins', 
         useMaterial3: true,
       ),
-      home: const ProductListScreen(),
+      home: const HomeScreen(),
     );
   }
 }
