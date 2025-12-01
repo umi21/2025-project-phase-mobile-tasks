@@ -38,17 +38,6 @@ class ProductCard extends StatelessWidget {
           // Image Section
           ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
-            // child: Image.network( // Changed to network for demo purposes
-            //   'https://img.freepik.com/free-photo/leather-shoes_1203-8120.jpg', // A placeholder link for brown boots
-            //   height: 160,
-            //   width: double.infinity,
-            //   fit: BoxFit.cover,
-            //   errorBuilder: (context, error, stackTrace) => Container(
-            //     height: 160,
-            //     color: Colors.grey[200],
-            //     child: const Icon(Icons.image, size: 50, color: Colors.grey),
-            //   ),
-            // ),
             child: Image.asset(
               imagePath,
               height: 160,

@@ -37,7 +37,7 @@ class ProductListScreen extends StatelessWidget {
                   separatorBuilder: (context, index) => const SizedBox(height: 20),
                   itemBuilder: (context, index) {
                     return const ProductCard(
-                      imagePath: 'photo-1542291026-7eec264c27ff.avif',
+                      imagePath: 'Images/usama-akram-kP6knT7tjn4-unsplash.jpg',
                       title: 'Derby Leather Shoes',
                       price: '\$120',
                       category: "Men's shoe",
@@ -57,7 +57,7 @@ class ProductListScreen extends StatelessWidget {
         height: 65,
         child: FloatingActionButton(
           onPressed: () {},
-          backgroundColor: const Color(0xFF3F51F3), // The specific blue from the image
+          backgroundColor: const Color(0xFF3F51F3), 
           shape: const CircleBorder(),
           elevation: 4,
           child: const Icon(Icons.add, color: Colors.white, size: 32),
