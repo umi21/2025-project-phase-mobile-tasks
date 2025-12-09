@@ -1,3 +1,4 @@
+import 'package:layout/features/domain/entities/product.dart';
 import 'package:layout/features/domain/repository/product_repository.dart';
 
 class GetProduct {
@@ -9,7 +10,7 @@ class GetProduct {
     required this.repository
   });
 
-  Future<void> call() {
+  Future<Product> call() {
     return repository.getProductById(id);
   }
 }

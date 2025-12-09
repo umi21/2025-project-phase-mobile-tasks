@@ -1,3 +1,4 @@
+import 'package:layout/features/domain/entities/product.dart';
 import 'package:layout/features/domain/repository/product_repository.dart';
 
 class ViewAllProducts {
@@ -7,7 +8,7 @@ class ViewAllProducts {
     required this.repository
   });
 
-  Future<void> call() {
+  Future<List<Product>> call() {
     return repository.viewAllProducts();
   }
 }
