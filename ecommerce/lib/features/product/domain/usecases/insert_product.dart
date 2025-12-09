@@ -1,5 +1,5 @@
-import 'package:layout/features/domain/entities/product.dart';
-import 'package:layout/features/domain/repository/product_repository.dart';
+import 'package:layout/features/product/domain/entities/product.dart';
+import 'package:layout/features/product/domain/repository/product_repository.dart';
 
 class InsertProduct {
   final Product product;
