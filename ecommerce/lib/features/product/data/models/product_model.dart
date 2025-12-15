@@ -7,7 +7,7 @@ class ProductModel extends Product{
     required super.name,
     required super.description,
     required super.price,
-    required super.imageUrl
+    required super.imageUrl,
   });
 
   // fromJson

@@ -11,6 +11,6 @@ class DeleteProduct {
   });
 
   Future<void> call() {
-    return repository.deleteProduct(product);
+    return repository.deleteProduct(product.id);
   }
 }
